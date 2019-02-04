@@ -54,8 +54,6 @@ namespace p3
 {
     public class iSeq
     {
-        protected int [] bigA;
-        protected int size = 5;
         protected const uint SEQUENCE_ADDER = 10;
         protected const uint DEFAULT_COUNT = 0;
         protected const bool DEFAULT_ACTIVE = true;
@@ -69,11 +67,6 @@ namespace p3
 
         public iSeq(int userStart, int pVal)
         {   
-            bigA = new int[size];
-            for (int i = 0; i < size; i++)
-            {
-                bigA[i] = 0;
-            }
             countSuccessQ = DEFAULT_COUNT;
             numQueries = DEFAULT_COUNT;
             isActive = DEFAULT_ACTIVE;            
